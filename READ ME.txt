@@ -1,0 +1,29 @@
+Documents:
+buffer		original
+logger		original
+manual_control	modified
+vector		original
+
+In order to replicate the experiment performed throughout this project the following steps should be taken:
+-	First ensure that Anaconda has been installed on your system
+-	Download the CARLA simulator
+-	Extract the zip file to the desired directory
+-	In the anaconda console, navigate to ~\CARLA_0.9.14\WindowsNoEditor\PythonAPI\examples
+-	Run the command: conda create --name carla-sim python=3.7
+-	Run the command: activate carla-sim
+-	Install Library: pip install carla
+-	Install Library: pip install pygame
+-	Install Library: pip install numpy
+-	Install Library: pip install jupyter
+-	Install Library: pip install opencv-python
+-	Download Files from GitHub repository
+-	Extract Files from Zip
+-	Replace manual_control.py in examples folder with the modified copy from GitHub [23]
+-	Add File buffer.py to examples folder
+-	Add File logger.py to examples folder
+-	Add File vector.py to examples folder
+-	To start the simulation: Run the command: python manual_control.py in the active Anaconda console
+-	If manual mode is desired press “p” after the simulation starts or change “self._autopilot_enabled = True”  to False in the updated manual_control.py copy
+Data produced from running the simulator should be placed in the “dump” folder in examples. If you wish to keep the data copy the files to another directory as they will be overwritten with the next execution of the simulation.
+Ensure that all library dependencies are installed to Anaconda before launch.
+Ensure that all drivers are up to date before running the simulator.
